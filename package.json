@@ -1,0 +1,11 @@
+{
+  "name": "menu-builder",
+  "version": "0.1.0",
+  "description": "Menu Builder",
+  "main": "app/index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.0.0"
+  }
+}
