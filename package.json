@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "~8.0.0"
+    "hapi": "~8.0.0",
+    "winston": "^0.8.3"
   },
   "devDependencies": {
     "gulp": "^3.8.10",

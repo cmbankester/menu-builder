@@ -1,4 +1,5 @@
 var port, start = new Date;
+var logger = require('./lib/logger')('server');
 
 // require('sugar');
 
@@ -32,8 +33,18 @@ server.on('start', function(){
   }
 
   var time = new Date - start;
-  console.log(app.name + " started on " + port_type + " " + port + " (" + env + " mode) in " + time + "ms");
+  logger.info(app.name + " started on " + port_type + " " + port + " (" + env + " mode) in " + time + "ms");
 });
+
+server.on('log', function(data){
+  logger.info([data.timestamp, ' - ', data.tags].join(' '));
+});
+
+server.on('request', function(data){
+  logger.info([data.timestamp, ' - ', data.tags].join(' '));
+});
+
+server.log('test');
 
 server.start();
 
