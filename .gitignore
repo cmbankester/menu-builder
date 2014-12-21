@@ -1,2 +1,4 @@
 node_modules
 public/*
+app/config/*.js
+!app/config/*.sample.js

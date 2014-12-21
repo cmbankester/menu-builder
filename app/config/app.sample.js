@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Menu Builder',
-  port: null,
-  socket: '/tmp/menu-builder.sock',
+  port: 3000,
+  socket: null,
   env: 'development'
 }

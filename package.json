@@ -6,6 +6,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^8.0.0"
+    "hapi": "~8.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-webserver": "cbankester/gulp-webserver"
   }
 }
