@@ -9,7 +9,7 @@ var fs        = require('fs'),
     env       = app.env,
     port_type = app.socket != null ? 'socket' : 'port';
 
-require('./lib/process');
+require('./lib/process')(server);
 
 if (port_type === 'socket') {
   if (fs.existsSync(app.socket)) {
@@ -36,15 +36,30 @@ server.on('start', function(){
   logger.info(app.name + " started on " + port_type + " " + port + " (" + env + " mode) in " + time + "ms");
 });
 
-server.on('log', function(data){
-  logger.info([data.timestamp, ' - ', data.tags].join(' '));
+server.on('log', function (event, tags) {
+  if (tags.error) {
+    logger.error('Server error: ' + (event.data || 'unspecified'));
+  }
 });
 
-server.on('request', function(data){
-  logger.info([data.timestamp, ' - ', data.tags].join(' '));
+server.on('response', function (request) {
+  // api/view routers each have their own request logger, so we just need to
+  // handle the requests that weren't handled by the routers
+  if (!(tags = request.route.settings.tags) || tags.indexOf('view') === tags.indexOf('view') === -1) {
+    var response = request.response;
+    var status = response.statusCode;
+    if (status >= 200 && status < 400) {
+      logger.info('%s %s %s', status, request.method.toUpperCase(), request.path);
+    } else {
+      logger.warn('%s %s - %s %s', status, response.source.error, request.method.toUpperCase(), request.path);
+    }
+  }
 });
 
-server.log('test');
+//
+// server.on('request-error', function(request, event, tags){
+//   logger.error(event)
+// });
 
 server.start();
 
