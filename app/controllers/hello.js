@@ -1,5 +1,5 @@
 exports.hello = {
   handler: function (request, reply) {
-    reply('hello again, world!');
+    reply.view('hello/index');
   }
 }

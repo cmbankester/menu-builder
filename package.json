@@ -7,10 +7,11 @@
   "license": "ISC",
   "dependencies": {
     "hapi": "~8.0.0",
-    "winston": "^0.8.3"
+    "jade": "~1.8.2",
+    "winston": "~0.8.3"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "~3.8.10",
     "gulp-webserver": "cbankester/gulp-webserver"
   }
 }

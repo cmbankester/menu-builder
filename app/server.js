@@ -26,6 +26,13 @@ server.connection({
   port: port
 });
 
+server.views({
+  path: 'app/views',
+  engines: {
+    jade: require('jade')
+  }
+});
+
 server.on('start', function(){
   if (app.socket) {
     // Allow nginx to read the socket file
