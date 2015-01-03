@@ -9,7 +9,7 @@
 
 Allows the user to enter new rules for the types of food to be eaten and the frequency those foods should be eaten.
 
-![Create food rule](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/44965129a900d63e5ef60d6f14259243a2e5d3ba/planning/mockup-create-rule.png?token=8672ed6bc026f8285fc4b77453441742ead8caf7)
+![Create food rule](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/e84a2dacf3632a9e1f9153f7be2d3fb6d2e641d5/planning/mockup-create-rule.png?token=6e1cc34c7c4cc4d524f18c36e67fdbeacb796ce3)
 
 Fields:
 
