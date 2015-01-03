@@ -1,14 +1,15 @@
 # Phase 1
 
-## Objectives
+- [Create new rules](#rule)
+- [Associate foods with categories](#category)
+- [I have eaten...](#eaten)
 
-* Create new rules
-* Associate foods with categories
-* I have eaten...
-
+<a name="rule"></a>
 ## Create new rules
 
 Allows the user to enter new rules for the types of food to be eaten and the frequency those foods should be eaten.
+
+![Create food rule](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/44965129a900d63e5ef60d6f14259243a2e5d3ba/planning/mockup-create-rule.png?token=8672ed6bc026f8285fc4b77453441742ead8caf7)
 
 Fields:
 
@@ -27,15 +28,19 @@ Fields:
   * week
   * month
 
+<a name="category"></a>
 ## Associate foods with categories
 
-Allows the user to tie a food to 1 or more categories. For instance, one could add hamburger into a red meat category.
+Allows the user to associate a food to 1 or more categories. For instance, one could add hamburger into a red meat category.
+
+![Associate food with category](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/44965129a900d63e5ef60d6f14259243a2e5d3ba/planning/mockup-food-category.png?token=740821bad153fb5b3e53f89741dd921274a38d85)
 
 Fields
 
-* Food 
+* Food
 * Category(ies) - String, acts like tags
 
+<a name="eaten"></a>
 ## I have eaten...
 
 Allows the user to report back to the system with what was eaten on a given day, allowing the system to chart progress and how successful the user has been with meeting goal rules.
