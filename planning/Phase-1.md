@@ -10,7 +10,7 @@
 
 Allows the user to enter new rules for the types of food to be eaten and the frequency those foods should be eaten.
 
-![Create food rule](mockup-create-rule.png)
+![Create food rule](planning/mockup-create-rule.png?raw)
 
 Fields:
 
@@ -33,7 +33,7 @@ Fields:
 
 Allows the user to tie a food to 1 or more categories. For instance, one could add hamburger into a red meat category.
 
-![Associate food with category](mockup-food-category.png)
+![Associate food with category](planning/mockup-food-category.png?raw)
 
 Fields
 
