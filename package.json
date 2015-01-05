@@ -8,10 +8,20 @@
   "dependencies": {
     "hapi": "~8.0.0",
     "jade": "~1.8.2",
+    "requirejs": "~2.1.15",
     "winston": "~0.8.3"
   },
   "devDependencies": {
+    "del": "~1.1.1",
     "gulp": "~3.8.10",
-    "gulp-webserver": "cbankester/gulp-webserver"
+    "gulp-concat": "~2.4.3",
+    "gulp-less": "~2.0.1",
+    "gulp-uglify": "~1.0.2",
+    "gulp-webserver": "cbankester/gulp-webserver",
+    "less-plugin-autoprefix": "~1.1.0",
+    "less-plugin-clean-css": "~1.4.0"
+  },
+  "engines": {
+    "node": ">=0.11.14"
   }
 }

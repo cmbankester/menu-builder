@@ -1,4 +1,5 @@
 node_modules
+bower_components
 public/*
 app/config/*.js
 !app/config/*.sample.js
