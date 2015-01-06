@@ -63,6 +63,16 @@ server.on('response', function (request) {
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/{param*}',
+  handler: {
+    directory: {
+      path: 'public'
+    }
+  }
+});
+
 //
 // server.on('request-error', function(request, event, tags){
 //   logger.error(event)

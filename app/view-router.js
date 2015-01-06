@@ -1,5 +1,5 @@
 var server = require('./server'),
-    hello = require('./controllers/hello'),
+    rules  = require('./controllers/rules'),
     logger = require('./lib/logger')('view');
 
 server.on('response', function (request) {
@@ -34,4 +34,4 @@ function addRoute(method, path, route){
   });
 }
 
-addRoute('/hello', hello.hello);
+addRoute('/create', rules.create);

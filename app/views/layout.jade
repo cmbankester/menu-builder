@@ -1,7 +1,11 @@
 doctype html
 html
   head
+    meta(charset='utf8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     block title
-      title Default title
+      title Menu Builder or Something
+    link(rel='stylesheet', type='text/css', href='/css/app.css')
+    script(type='text/javascript', src='/js/all.js')
   body
-    block content
+    .container: block content

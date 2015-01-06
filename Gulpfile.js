@@ -67,7 +67,7 @@ gulp.task('server', function(){
 });
 
 gulp.task('default', ['handle-assets', 'prepare-server', 'server'], function(){
-  gulp.watch(['app/**/*.js', '!app/assets/**/*', './Gulpfile.js'], ['server']);
+  gulp.watch(['app/**/*.js', 'app/views/**/*.jade', '!app/assets/**/*', './Gulpfile.js'], ['server']);
   gulp.watch('app/assets/scripts/**/*', ['js']);
   gulp.watch('app/assets/styles/**/*', ['less']);
   gulp.watch('bower_components/**/*', ['handle-assets'])

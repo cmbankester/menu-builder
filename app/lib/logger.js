@@ -3,10 +3,8 @@ var path = require('path');
 var winston = require('winston');
 var env = process.env.NODE_ENV;
 var log_dir = 'log';
-
-var log_filename = (env === 'production' ? 'log' : env + '.log')
-var access_filename = 'access.' + log_filename;
-var error_filename = 'error.' + log_filename;
+var access_filename = 'access.log';
+var error_filename = 'error.log';
 
 module.exports = function(label){
 

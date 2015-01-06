@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  h1 Create a new food rule
+  .row
+    .col-sm-2
+      p I want to eat
+    .col-sm-2: .form-group
+      .col-sm-6: input.form-control(type="text", placeholder="2")
+      .col-sm-6: input.form-control(type="text", placeholder="pieces")
+    .col-sm-2
+      input.form-control(type="text", placeholder="Food Name")
+    .col-sm-2: .form-group
+      .col-sm-6: input.form-control(type="text", placeholder="at least")
+      .col-sm-6: input.form-control(type="text", placeholder="3")
+    .col-sm-2: .form-group
+      .col-sm-6 per
+      .col-sm-6: input.form-control(type="text", placeholder="day")
