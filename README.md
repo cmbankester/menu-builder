@@ -14,4 +14,18 @@ The goal of this application is to allow users to create dietary rules about the
 
 ## How to setup in development
 
-[todo]
+* Clone repo
+
+* Install dependencies
+```
+npm install
+bower install
+gulp
+```
+
+* Copy `app/config/app.sample.js to `app/config/app.js` and edit as needed
+
+* Start the server (from document root)
+```
+node .
+```
