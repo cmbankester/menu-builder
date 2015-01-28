@@ -9,7 +9,7 @@
 
 Allows the user to enter new rules for the types of food to be eaten and the frequency those foods should be eaten.
 
-![Create food rule](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/e84a2dacf3632a9e1f9153f7be2d3fb6d2e641d5/planning/mockup-create-rule.png?token=6e1cc34c7c4cc4d524f18c36e67fdbeacb796ce3)
+![Create food rule](https://raw.githubusercontent.com/cbankester/menu-builder-hapi/master/planning/mockup-create-rule.png)
 
 Fields:
 
@@ -33,7 +33,7 @@ Fields:
 
 Allows the user to associate a food to 1 or more categories. For instance, one could add hamburger into a red meat category.
 
-![Associate food with category](https://bytebucket.org/beard-jason/menu-builder-hapi/raw/44965129a900d63e5ef60d6f14259243a2e5d3ba/planning/mockup-food-category.png?token=740821bad153fb5b3e53f89741dd921274a38d85)
+![Associate food with category](https://raw.githubusercontent.com/cbankester/menu-builder-hapi/master/planning/mockup-food-category.png)
 
 Fields
 
